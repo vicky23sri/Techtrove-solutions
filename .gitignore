@@ -1,0 +1,8 @@
+node_modules
+
+ul li.selected {
+    border-image: linear-gradient(to right, cyan, blue);
+    border-image-slice: 1; 
+    border-image-width: 0 0 5px 0; 
+    border-style: solid;
+}

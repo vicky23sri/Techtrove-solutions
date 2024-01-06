@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ul li.selected {
+    border-image: linear-gradient(to right, cyan, blue);
+    border-image-slice: 1; 
+    border-image-width: 0 0 5px 0; 
+    border-style: solid;
+}
+
+.pri-menu {
+    transition: all .5s;
+}
+
+.pri-menu button, .pri-menu > a {
+    text-transform: uppercase;
+}
+
+.pri-menu:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.sec-menu a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.sec-menu {
+    display: none;
+}
+
+.sec-menu.show {
+    display: block;
+    border-radius: 0px !important;
+    transition: all .5s;
+}
