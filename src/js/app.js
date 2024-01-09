@@ -27,10 +27,7 @@ const megaMenu = document.getElementById('mega-menu');
 
 if (typeof mobileMenuToggler != 'undefined') {
     mobileMenuToggler.addEventListener('click', () => {
-        // if (megaMenu.classList.contains('hidden')) {
-        // }
         mobileMenuToggler.classList.toggle('menu-toggle-active');
-        // Toggle the 'hidden' class on the mega-menu element
         megaMenu.classList.toggle('hidden');
     });
 }

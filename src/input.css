@@ -2,8 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-ul li.selected {
-    border-image: linear-gradient(to right, cyan, blue);
+:root {
+    --banner-bg: #333;
+    --banner-shadow-bg: rgb(0 0 0 / 0.6);
+    --footer-bg: #202123;
+}
+
+footer {
+    background-color: var(--footer-bg);
+}
+
+.selected ul li.selected {
+    border-image: linear-gradient(to right, #2767F8, #8938E5, #FF00CF);
     border-image-slice: 1; 
     border-image-width: 0 0 5px 0; 
     border-style: solid;
@@ -19,7 +29,7 @@ ul li.selected {
 
 .pri-menu:hover {
     background-color: var(--primary-color);
-    color: #fff;
+    color: #000;
 }
 
 .sec-menu a:hover {
