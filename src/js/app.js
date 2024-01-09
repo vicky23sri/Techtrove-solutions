@@ -63,3 +63,22 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    var cards = document.querySelectorAll('.max-w-2xl');
+    var currentIndex = 0;
+
+    function toggleCardsVisibility() {
+        cards.forEach(function (card, index) {
+            if (index === currentIndex || index === (currentIndex + 1) % cards.length) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        currentIndex = (currentIndex + 2) % cards.length;
+    }
+
+    setInterval(toggleCardsVisibility, 10000);
+});
