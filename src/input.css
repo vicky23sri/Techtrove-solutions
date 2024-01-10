@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
+    --primary-color: #098cf0;
     --banner-bg: #333;
     --banner-shadow-bg: rgb(0 0 0 / 0.6);
     --footer-bg: #202123;
@@ -12,11 +15,16 @@ footer {
     background-color: var(--footer-bg);
 }
 
-.selected ul li.selected {
+.my-custom-list li.selected {
     border-image: linear-gradient(to right, #2767F8, #8938E5, #FF00CF);
     border-image-slice: 1; 
     border-image-width: 0 0 5px 0; 
     border-style: solid;
+    background-color: #f0f0f0; 
+}
+
+.my-custom-list li.selected a {
+    color: #007bff; 
 }
 
 .pri-menu {

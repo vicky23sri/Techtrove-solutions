@@ -8,8 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- header -->
     <header>
-        <div class="container mx-auto my-5 px-4 font-custom">
+        <div class="container mx-auto my-5 px-4">
             <div class="flex flex-wrap justify-between items-center mx-auto">
                 <section class="logo">
                     <a href="#"><img class="w-[100px]" src="./img/techtrove.png" alt="Logo"></a>
@@ -24,7 +25,7 @@
                     <ul class="flex flex-col flex-wrap md:items-center mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
                         <li>
                             <a
-                                href="../build/index.html"
+                                href="#"
                                 class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                                 aria-current="page"
                                 >Home</a
@@ -51,7 +52,7 @@
 
                         <li class="relative pri-menu">
                             <a 
-                                href="../build/carrers.html" 
+                                href="../src/carrers.html" 
                                 class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium border-b md:w-auto md:border-0"
                             >
                             Careers
@@ -74,7 +75,7 @@
         </div>
     </header>
     
-    <section class="hero bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white py-16 font-custom">
+    <section class="hero bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white py-16">
         <div class="container mx-auto text-center p-2 md:p-0 lg:p-2">
             <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-indigo-100 to-indigo-400 animate-gradient">
                 Empowering Solutions for Tomorrow's Challenges
@@ -85,106 +86,38 @@
         </div>
     </section>
 
-    <div class="container mx-auto my-5 px-4 font-custom">
-        <div class="text-center">
-            <h2 class="flex flex-row flex-nowrap items-center mt-10">
-                <span class="flex-grow block border-t border-green-500"></span>
-                <span class="flex-none block mx-4 px-4 py-2.5 text-2xl md:text-3xl font-semibold rounded leading-none border-2 border-green-400">
-                    Careers Opportunities
-                </span>
-                <span class="flex-grow block border-t border-green-500"></span>
-            </h2>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center my-16">
-            <div class="flex">
-                <div class="mx-auto flex flex-col gap-4">
-                    <h2 class="title-font-family font-medium text-3xl">“ Take the Next Step in Your Professional 
-                        Journey with TechTrove Solutions ”</h2>
-                    <p class="text-xl leading-7">
-                        Are you passionate about technology and looking to make a real impact? TechTrove Solutions is always on the lookout for exceptional talent. Explore our current job openings and join us on this exciting journey of innovation and growth 
-                    </p>
+    <section class="w-full my-14 ">
+        <div class="container mx-auto my-16 px-4">
+            <div class="text-center">
+                <div class="inline-block border-2 border-green-400 px-4 py-2">
+                    <h1 class="title-font-family text-2xl md:text-3xl font-semibold">
+                        About Us
+                    </h1>
                 </div>
             </div>
-            <div>
-                <img class="max-w-full rounded-xl" src="./img/carrier 1.png" alt="" srcset="">
-            </div>
-        </div>
-    </div>
-
-    <div class="container mx-auto my-5 px-4 font-custom">
-        <div class="text-center">
-            <h2 class="flex flex-row flex-nowrap items-center mt-24">
-                <span class="flex-grow block border-t border-green-500"></span>
-                <span class="flex-none block mx-4 px-4 py-2.5 text-2xl md:text-3xl font-semibold rounded leading-none border-2 border-green-400">
-                    Training programs
-                </span>
-                <span class="flex-grow block border-t border-green-500"></span>
+            <h2 class="title-font-family font-semibold text-2xl lg:text-center">
+                At TechTrove Solutions, we embark on a transformative journey as a dynamic startup software company headquartered in the vibrant tech hub of Bangalore, India. Established with a vision to redefine innovation and excellence in the digital realm, we are committed to delivering cutting-edge solutions that propel businesses forward.
             </h2>
-        </div>
-        <div class="text-center my-5">
-            <h2 class="title-font-family font-medium text-3xl"> Fostering Success through Skill Enhancement: Techtrove's Devotion to 
-                Your Developmental Journey </h2>
-            <p class="text-xl py-5 leading-7">
-                In the ever-evolving realm of Software Solutions and advanced Engineering Services, maintaining a competitive edge necessitates a workforce of exceptional skill and expertise. Our state-of-the-art Training Programs provide customized solutions meticulously crafted to enhance the proficiency of your team. We deliver up-to-the-minute and industry-specific training in cutting-edge technologies, methodologies, and best practices, ensuring that your employees consistently stand at the forefront of the industry.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center my-16">
-            <div>
-                <img class="max-w-full rounded-xl" src="./img/carrier2 1.png" alt="" srcset="">
-            </div>
-            <div class="flex">
-                <div class="mx-auto flex flex-col gap-4">
-                    <h2 class="title-font-family font-medium text-3xl mb-5 text-green-500">Ongoing Training Programs</h2>
-                    <ul class="text-xl font-medium leading-7 text-gray-700 space-y-4 text-left ">
-                        <li class="flex items-center space-x-3">
-                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                            <path stroke="#90CC4B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
-                            </svg>
-                            <span> SAP Modules </span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                            <path stroke="#90CC4B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
-                            </svg>
-                            <span class="capitalize"> Software Technologies </span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                            <path stroke="#90CC4B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
-                            </svg>
-                            <span class="capitalize"> Devops</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                            <path stroke="#90CC4B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
-                            </svg>
-                            <span class="capitalize"> Mobile App Developent</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                            <path stroke="#90CC4B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
-                            </svg>
-                            <span class="capitalize"> Cyber Security Essentials </span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                            <path stroke="#90CC4B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
-                            </svg>
-                            <span class="capitalize"> Data Science and AI Training </span>
-                        </li>
-                        <a id="#" class="inline-block px-16 py-4 text-xl font-bold" style="background: rgba(10, 10, 246, 0.689); color: white; border-top-right-radius: 10px; border-bottom-left-radius: 10px; margin-top: 30px;">
-                            REGISTER HERE
-                        </a>
-                    </ul>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center my-16">
+                <div>
+                    <img class="max-w-full rounded-xl" src="/build/img/mission 1.png" alt="" srcset="">
+                </div>
+                <div class="flex">
+                    <div class="mx-auto flex flex-col gap-4">
+                        <h2 class="title-font-family font-medium text-3xl">“Take the Next Step in Your Professional Journey with TechTrove Solutions”</h2>
+                        <p class="text-lg font-medium leading-7">
+                            Are you passionate about technology and looking to make a real impact? TechTrove
+                            Solutions is always on the lookout for exceptional talent. Explore our current
+                            job openings and join us on this exciting journey of innovation and growth
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <div style="background-color: #00252E;" class="text-white">
-        <div class="container mx-auto p-8 lg:p-20 flex flex-col md:flex-row justify-center font-custom">
+        <div class="container mx-auto p-8 lg:p-20 flex flex-col md:flex-row justify-center">
             <div class="w-full md:w-1/2 pr-0 md:pr-8 mb-4 md:mb-0">
                 <h2 class="text-xl md:text-xl text-green-500 font-bold mb-4">GET IN TOUCH</h2>
                 <p class="text-3xl md:text-5xl font-bold mb-4">
@@ -226,7 +159,7 @@
     </div>
 
     <footer class="pt-10 pb-2 w-full">
-        <div class="container mx-auto mt-6 mb-16 px-4 font-custom">
+        <div class="container mx-auto mt-6 mb-16 px-4">
             <div class="flex flex-col md:flex-row md:justify-between">
                 <div>
                     <h2 class="title-font-family text-white font-medium text-2xl">INDUSTRIES</h2>
@@ -366,5 +299,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="../src/js/app.js"></script>
+
 </body>
 </html>

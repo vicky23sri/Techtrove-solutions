@@ -7,15 +7,13 @@ module.exports = {
         'gradient': 'gradient 8s linear infinite',
       },
       fontFamily: {
-        poppins: ['Poppins', 'sans'],
+        custom: ['Kanit', 'sans-serif'],
       },
-      extend: {
-        backgroundColor: {
-          'Logo-Color': 'var(--Logo-Color, #90CC4B)',
-        },
-        boxShadow: {
-          'custom': '0px 0px 15px 0px #45CD58',
-        },
+      backgroundColor: {
+        'Logo-Color': 'var(--Logo-Color, #90CC4B)',
+      },
+      boxShadow: {
+        'custom': '0px 0px 15px 0px #45CD58',
       },
       keyframes: {
         'gradient': {

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const tabs = document.querySelectorAll('ul li a');
+    const tabs = document.querySelectorAll('.my-custom-list li a');
     tabs.forEach(tab => {
         tab.addEventListener('click', function (e) {
             e.preventDefault();
