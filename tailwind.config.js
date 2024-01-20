@@ -18,10 +18,11 @@ module.exports = {
       keyframes: {
         'gradient': {
           to: { 'background-position': '200% center' },
-        }
-      }                    
+        },
+      },
     },
   },
   plugins: [],
-}
+};
+
 
