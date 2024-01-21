@@ -1,26 +1,69 @@
+// document.addEventListener('DOMContentLoaded', function () {
+//     const tabs = document.querySelectorAll('.my-custom-list li a');
+//     tabs.forEach(tab => {
+//         tab.addEventListener('click', function (e) {
+//             e.preventDefault();
+
+//             tabs.forEach(tab => {
+//                 tab.parentElement.classList.remove('selected');
+//             });
+
+//             this.parentElement.classList.add('selected');
+
+//             const targetId = this.getAttribute('data-target');
+//             const contents = document.querySelectorAll('.content');
+
+//             contents.forEach(content => {
+//                 content.classList.add('hidden');
+//             });
+
+//             document.getElementById(targetId).classList.remove('hidden');
+//         });
+//     });
+// });
+
 document.addEventListener('DOMContentLoaded', function () {
     const tabs = document.querySelectorAll('.my-custom-list li a');
-    tabs.forEach(tab => {
+    const contents = document.querySelectorAll('.content');
+    let currentIndex = 0;
+
+    function showContent(index) {
+        contents.forEach(content => {
+            content.classList.add('hidden');
+        });
+
+        tabs.forEach(tab => {
+            tab.parentElement.classList.remove('selected');
+        });
+
+        contents[index].classList.remove('hidden');
+        tabs[index].parentElement.classList.add('selected');
+    }
+
+    function nextContent() {
+        currentIndex = (currentIndex + 1) % contents.length;
+        showContent(currentIndex);
+    }
+
+    tabs.forEach((tab, index) => {
         tab.addEventListener('click', function (e) {
             e.preventDefault();
-
-            tabs.forEach(tab => {
-                tab.parentElement.classList.remove('selected');
-            });
-
-            this.parentElement.classList.add('selected');
-
-            const targetId = this.getAttribute('data-target');
-            const contents = document.querySelectorAll('.content');
-
-            contents.forEach(content => {
-                content.classList.add('hidden');
-            });
-
-            document.getElementById(targetId).classList.remove('hidden');
+            showContent(index);
+            currentIndex = index;
         });
     });
+
+    setInterval(nextContent, 10000); 
 });
+
+//modal
+function openModal() {
+    document.getElementById('modal').style.display = 'flex';
+}
+
+function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+}
 
 const mobileMenuToggler = document.getElementById('mobile-menu-toggler');
 const megaMenu = document.getElementById('mega-menu');
