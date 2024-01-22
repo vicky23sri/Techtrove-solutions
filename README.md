@@ -1,1 +1,5 @@
-# Techtrove-solutions
+Techtrove-solutions
+
+
+Install
+tailwind CSS
