@@ -26,11 +26,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const tabs = document.querySelectorAll('.my-custom-list li a');
     const contents = document.querySelectorAll('.content');
     let currentIndex = 0;
-    let intervalId;
+    let intervalId;  
 
     function showContent(index) {
-        contents.forEach(content => content.classList.add('hidden'));
-        tabs.forEach(tab => tab.parentElement.classList.remove('selected'));
+        contents.forEach(content => {
+            content.classList.add('hidden');
+        });
+
+        tabs.forEach(tab => {
+            tab.parentElement.classList.remove('selected');
+        });
 
         contents[index].classList.remove('hidden');
         tabs[index].parentElement.classList.add('selected');
@@ -42,10 +47,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     tabs.forEach((tab, index) => {
-        tab.addEventListener('click', (e) => {
+        tab.addEventListener('click', function (e) {
             e.preventDefault();
             showContent(index);
             currentIndex = index;
+            
             clearInterval(intervalId);
         });
     });
@@ -57,11 +63,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const tabs = document.querySelectorAll('.my-software-list li a');
     const contents = document.querySelectorAll('.content');
     let currentIndex = 0;
-    let intervalId;
+    let intervalId;  
 
     function showContent(index) {
-        contents.forEach(content => content.classList.add('hidden'));
-        tabs.forEach(tab => tab.parentElement.classList.remove('selected'));
+        contents.forEach(content => {
+            content.classList.add('hidden');
+        });
+
+        tabs.forEach(tab => {
+            tab.parentElement.classList.remove('selected');
+        });
 
         contents[index].classList.remove('hidden');
         tabs[index].parentElement.classList.add('selected');
@@ -73,20 +84,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     tabs.forEach((tab, index) => {
-        tab.addEventListener('click', (e) => {
+        tab.addEventListener('click', function (e) {
             e.preventDefault();
-            const targetContentId = tab.getAttribute('data-target');
-            currentIndex = Array.from(contents).findIndex(content => content.id === targetContentId);
+            showContent(index);
+            currentIndex = index;
             
-            showContent(currentIndex);
             clearInterval(intervalId);
         });
     });
 
     intervalId = setInterval(nextContent, 5000);
 });
-
-
 
 //sidebar
 document.addEventListener("DOMContentLoaded", function () {
