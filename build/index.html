@@ -29,15 +29,15 @@
                 <div id="mega-menu" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
                     <ul
                         class="flex flex-col flex-wrap md:items-center mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
-                        <li>
+                        <li class="relative">
                             <a href="../build/index.html"
-                                class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium border-b md:w-auto md:border-0 focus:outline-none hover:bg-gray-100"
+                                class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium border-b md:w-auto md:border-0 focus:outline-none uppercase"
                                 aria-current="page">Home</a>
                         </li>
 
-                        <li x-data="{ isOpen: false }">
+                        <li class="relative" x-data="{ isOpen: false }">
                             <button @click="isOpen = !isOpen"
-                                class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium border-b md:w-auto md:border-0 focus:outline-none">
+                                class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium border-b md:w-auto md:border-0 focus:outline-none uppercase">
                                 Solutions
                                 <svg :class="{ 'transform rotate-180': isOpen }" class="w-4 h-4"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -51,9 +51,9 @@
                                 class="absolute z-10 mt-2 w-48 bg-white rounded-md shadow-lg"
                                 style="display: none; left: -48px;">
                                 <ul class="py-2">
-                                    <li x-data="{ isSoftwareOpen: false }">
+                                    <li class="relative" x-data="{ isSoftwareOpen: false }">
                                         <button @click="isSoftwareOpen = !isSoftwareOpen"
-                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 uppercase">
                                             Software solution
                                         </button>
 
@@ -63,7 +63,7 @@
                                             <ul class="py-2">
                                                 <li>
                                                     <a href="#"
-                                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Software
+                                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 uppercase">Software
                                                         Development</a>
                                                 </li>
                                                 <li>
@@ -109,9 +109,9 @@
                                         </div>
                                     </li>
 
-                                    <li x-data="{ isEngineeringOpen: false }">
+                                    <li class="relative" x-data="{ isEngineeringOpen: false }">
                                         <button @click="isEngineeringOpen = !isEngineeringOpen"
-                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 uppercase">
                                             Engineering solution
                                         </button>
 
@@ -161,9 +161,9 @@
                             </div>
                         </li>
 
-                        <li x-data="{ isOpen: false }">
+                        <li class="relative" x-data="{ isOpen: false }">
                             <button @click="isOpen = !isOpen"
-                                class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium border-b md:w-auto md:border-0">
+                                class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium border-b md:w-auto md:border-0 uppercase">
                                 Company
                                 <svg :class="{ 'transform rotate-180': isOpen }" class="w-4 h-4"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -179,23 +179,23 @@
                                 <ul class="py-2">
                                     <li>
                                         <a href="../build/about.html"
-                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About Us</a>
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 uppercase">About Us</a>
                                     </li>
                                     <li>
                                         <a href="../build/people.html"
-                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">People</a>
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 uppercase">People</a>
                                     </li>
                                     <li>
                                         <a href="../build/insights.html"
-                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Insight</a>
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 uppercase">Insight</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
 
-                        <li x-data="{ isOpen: false }">
+                        <li class="relative" x-data="{ isOpen: false }">
                             <button @click="isOpen = !isOpen"
-                                class="flex items-center justify-between w-full font-medium border-b md:w-auto md:border-0">
+                                class="flex items-center justify-between w-full font-medium border-b md:w-auto md:border-0 uppercase">
                                 Carriers
                                 <svg :class="{ 'transform rotate-180': isOpen }" class="w-4 h-4"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -210,13 +210,13 @@
                                 style="display: none;">
                                 <ul class="py-2">
                                     <li>
-                                        <a href="../build/carrers.html"
-                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Training
+                                        <a href="../build/carrers.html#trainingProgramsContent"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 uppercase">Training
                                             Programs</a>
                                     </li>
                                     <li>
-                                        <a href="../build/carrers.html"
-                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Carrier
+                                        <a href="../build/carrers.html#carrieropportunities"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 uppercase">Carrier
                                             Opportunities</a>
                                     </li>
                                 </ul>
@@ -259,7 +259,7 @@
 
                         <li>
                             <button type="button"
-                                class="flex items-center justify-between w-full border border-black rounded-3xl text-center font-medium px-10 py-2 hover:border-blue-500 hover:bg-blue-500  hover:text-white">Get
+                                class="flex items-center justify-between w-full border border-black rounded-3xl text-center font-medium px-10 py-2 hover:border-blue-500 hover:bg-blue-500  hover:text-white uppercase">Get
                                 in touch</button>
                         </li>
                     </ul>
@@ -281,7 +281,355 @@
         </div>
     </section>
 
-    <div class="container mx-auto my-8 p-8 font-custom">
+    <div class="container mx-auto mt-16 p-8 font-custom">
+        <div class="flex flex-col-reverse md:flex-row gap-10 md:gap-10 rounded-lg overflow-hidden shadow-lg">
+            <div class="w-full md:w-1/3 p-4">
+                <div class="text-4xl md:text-6xl mb-10 font-semibold text-center md:text-right">
+                    Our Solutions
+                </div>
+                <ul class="my-custom-list">
+                    <li class="border-b selected">
+                        <a href="#software" data-target="software"
+                            class="block px-4 py-3 ml-4 text-2xl transition duration-300 ease-in-out transform hover:scale-110 hover:text-xl">
+                            Software Development
+                        </a>
+                    </li>
+                    <li class="border-b">
+                        <a href="#" data-target="Consulting"
+                            class="block px-4 py-5 ml-4 text-2xl transition duration-300 ease-in-out transform hover:scale-110 hover:text-xl ">
+                            SAP Consulting Services
+                        </a>
+                    </li>
+                    <li class="border-b">
+                        <a href="#" data-target="cloud"
+                            class="block px-4 py-5 ml-4 text-2xl transition duration-300 ease-in-out transform hover:scale-110 hover:text-xl ">
+                            Cloud Computing Services
+                        </a>
+                    </li>
+                    <li class="border-b">
+                        <a href="#" data-target="Dataanalytics"
+                            class="block px-4 py-5 ml-4 text-2xl transition duration-300 ease-in-out transform hover:scale-110 hover:text-xl ">
+                            Data Analytics Solutions
+                        </a>
+                    </li>
+                    <li class="border-b">
+                        <a href="#" data-target="Iot"
+                            class="block px-4 py-5 ml-4 text-2xl transition duration-300 ease-in-out transform hover:scale-110 hover:text-xl ">
+                            IOT Consulting Service
+                        </a>
+                    </li>
+                    <li class="border-b">
+                        <a href="#" data-target="Devops"
+                            class="block px-4 py-5 ml-4 text-2xl transition duration-300 ease-in-out transform hover:scale-110 hover:text-xl ">
+                            Devops
+                        </a>
+                    </li>
+                    <li class="border-b">
+                        <a href="#" data-target="ui/ux"
+                            class="block px-4 py-5 ml-4 text-2xl transition duration-300 ease-in-out transform hover:scale-110 hover:text-xl ">
+                            UI/UX Designs
+                        </a>
+                    </li>
+                    <li class="border-b">
+                        <a href="#" data-target="api"
+                            class="block px-4 py-5 ml-4 text-2xl transition duration-300 ease-in-out transform hover:scale-110 hover:text-xl ">
+                            API Development
+                        </a>
+                    </li>
+                    <li class="border-b">
+                        <a href="#" data-target="Migration"
+                            class="block px-4 py-5 ml-4 text-2xl transition duration-300 ease-in-out transform hover:scale-110 hover:text-xl ">
+                            Migration & Maintenance Program
+                        </a>
+                    </li>
+                    <li class="border-b">
+                        <a href="#" data-target="Web & Mobile"
+                            class="block px-4 py-5 ml-4 text-2xl transition duration-300 ease-in-out transform hover:scale-110 hover:text-xl">
+                            Web & Mobile App Development
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w-full md:w-2/3 p-10 font-custom">
+                <div id="software" class="content flex flex-col items-center p-6 ">
+                    <h2 class="text-3xl font-semibold mb-4 ">Software Development</h2>
+                    <div class="max-w-xl rounded-lg overflow-hidden">
+                        <a href="#">
+                            <img src="https://img.freepik.com/free-photo/medium-shot-woman-working-laptop_23-2150323510.jpg?size=626&ext=jpg&uid=P76213516&ga=GA1.1.213101867.1696940656&semt=ais"
+                                alt="Software Development Image" class="mb-4 rounded-lg w-full">
+                        </a>
+                        <div class="pt-5">
+                            <p class="mb-3 font-normal text-lg text-gray-700 dark:text-gray-400 leading-10">
+                                Our custom software development services cater to the unique needs of businesses
+                                by offering tailor-made solutions. Whether you require web development, mobile
+                                app development, or desktop application development, our team of experienced
+                                developers ensures that the software aligns seamlessly with your business
+                                objectives.
+                            </p>
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                View More
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Consulting" class="content hidden flex flex-col items-center p-6">
+                    <h2 class="text-3xl font-semibold mb-4">SAP Consulting Services</h2>
+                    <div class="max-w-xl rounded-lg overflow-hidden">
+                        <a href="#">
+                            <img src="https://img.freepik.com/free-photo/html-system-websites-concept_23-2150323534.jpg?size=626&ext=jpg&uid=P76213516&ga=GA1.1.213101867.1696940656&semt=ais"
+                                alt="Consulting Services Image" class="mb-4 rounded-lg">
+                        </a>
+                        <div class="pt-5">
+                            <p class="mb-3 font-normal text-lg text-gray-700 dark:text-gray-400 leading-10">
+                                Specializing in mobile app development, we create applications for both iOS and
+                                Android platforms. Our mobile solutions are designed to meet the demands of an
+                                ever-growing mobile user base. We leverage the latest technologies and design
+                                principles to ensure that your mobile app stands out in a competitive market,
+                                providing a seamless and engaging user experience.
+                            </p>
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                View More
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cloud" class="content hidden flex flex-col items-center">
+                    <h2 class="text-2xl font-semibold mb-4">Cloud Computing Services</h2>
+                    <div class="max-w-xl rounded-lg">
+                        <a href="#">
+                            <img src="https://img.freepik.com/free-photo/business-data-analysis_53876-95296.jpg?size=626&ext=jpg&uid=P76213516&ga=GA1.1.213101867.1696940656&semt=ais"
+                                alt="Innovation Hub Image" class="mb-4 rounded-lg">
+                        </a>
+                        <div class="pt-5">
+                            <p class="mb-3 font-normal text-lg text-gray-700 dark:text-gray-400 leading-10">
+                                At Techtrove, we specialize in cutting-edge software development to propel your business
+                                into
+                                the digital future. Our experienced team of developers is dedicated to crafting robust,
+                                scalable, and innovative solutions tailored to meet your unique needs.
+                            </p>
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                View More
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Dataanalytics" class="content hidden flex flex-col items-center">
+                    <h2 class="text-2xl font-semibold mb-4">Data Analytics Solutions</h2>
+                    <div class="max-w-xl rounded-lg">
+                        <a href="#">
+                            <img src="https://img.freepik.com/premium-photo/designer-development-ux-graphic-prototype-application_262807-17.jpg?size=626&ext=jpg&uid=P76213516&ga=GA1.1.213101867.1696940656&semt=ais"
+                                alt="Cloud Computing Image" class="mb-4 rounded-lg">
+                        </a>
+                        <div class="pt-5">
+                            <p class="mb-3 font-normal text-lg text-gray-700 dark:text-gray-400 leading-10">
+                                At Techtrove, we specialize in cutting-edge software development to propel your business
+                                into
+                                the digital future. Our experienced team of developers is dedicated to crafting robust,
+                                scalable, and innovative solutions tailored to meet your unique needs.
+                            </p>
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                View More
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Iot" class="content hidden flex flex-col items-center">
+                    <h2 class="text-2xl font-semibold mb-4">IOT Consulting Service</h2>
+                    <div class="max-w-xl rounded-lg">
+                        <a href="#">
+                            <img src="https://img.freepik.com/premium-photo/designer-development-ux-graphic-prototype-application_262807-17.jpg?size=626&ext=jpg&uid=P76213516&ga=GA1.1.213101867.1696940656&semt=ais"
+                                alt="Data Analystics Image" class="mb-4 rounded-lg">
+                        </a>
+                        <div class="pt-5">
+                            <p class="mb-3 font-normal text-lg text-gray-700 dark:text-gray-400 leading-10">
+                                At Techtrove, we specialize in cutting-edge software development to propel your business
+                                into
+                                the digital future. Our experienced team of developers is dedicated to crafting robust,
+                                scalable, and innovative solutions tailored to meet your unique needs.
+                            </p>
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                View More
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Devops" class="content hidden flex flex-col items-center">
+                    <h2 class="text-2xl font-semibold mb-4">Devops</h2>
+                    <div class="max-w-xl rounded-lg">
+                        <a href="#">
+                            <img src="https://img.freepik.com/premium-photo/designer-development-ux-graphic-prototype-application_262807-17.jpg?size=626&ext=jpg&uid=P76213516&ga=GA1.1.213101867.1696940656&semt=ais"
+                                alt="Devops Image" class="mb-4 rounded-lg">
+                        </a>
+                        <div class="pt-5">
+                            <p class="mb-3 font-normal text-lg text-gray-700 dark:text-gray-400 leading-10">
+                                At Techtrove, we specialize in cutting-edge software development to propel your business
+                                into
+                                the digital future. Our experienced team of developers is dedicated to crafting robust,
+                                scalable, and innovative solutions tailored to meet your unique needs.
+                            </p>
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                View More
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ui/ux" class="content hidden flex flex-col items-center">
+                    <h2 class="text-2xl font-semibold mb-4">UI/UX Designs</h2>
+                    <div class="max-w-xl rounded-lg">
+                        <a href="#">
+                            <img src="https://img.freepik.com/premium-photo/designer-development-ux-graphic-prototype-application_262807-17.jpg?size=626&ext=jpg&uid=P76213516&ga=GA1.1.213101867.1696940656&semt=ais"
+                                alt="Migration & Maintenance Image" class="mb-4 rounded-lg">
+                        </a>
+                        <div class="pt-5">
+                            <p class="mb-3 font-normal text-lg text-gray-700 dark:text-gray-400 leading-10">
+                                At Techtrove, we specialize in cutting-edge software development to propel your business
+                                into
+                                the digital future. Our experienced team of developers is dedicated to crafting robust,
+                                scalable, and innovative solutions tailored to meet your unique needs.
+                            </p>
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                View More
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="api" class="content hidden flex flex-col items-center">
+                    <h2 class="text-2xl font-semibold mb-4">API Development</h2>
+                    <div class="max-w-xl rounded-lg">
+                        <a href="#">
+                            <img src="https://img.freepik.com/premium-photo/designer-development-ux-graphic-prototype-application_262807-17.jpg?size=626&ext=jpg&uid=P76213516&ga=GA1.1.213101867.1696940656&semt=ais"
+                                alt="Migration & Maintenance Image" class="mb-4 rounded-lg">
+                        </a>
+                        <div class="pt-5">
+                            <p class="mb-3 font-normal text-lg text-gray-700 dark:text-gray-400 leading-10">
+                                At Techtrove, we specialize in cutting-edge software development to propel your business
+                                into
+                                the digital future. Our experienced team of developers is dedicated to crafting robust,
+                                scalable, and innovative solutions tailored to meet your unique needs.
+                            </p>
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                View More
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Migration" class="content hidden flex flex-col items-center">
+                    <h2 class="text-2xl font-semibold mb-4">Migration & Maintenance Program</h2>
+                    <div class="max-w-xl rounded-lg">
+                        <a href="#">
+                            <img src="https://img.freepik.com/premium-photo/designer-development-ux-graphic-prototype-application_262807-17.jpg?size=626&ext=jpg&uid=P76213516&ga=GA1.1.213101867.1696940656&semt=ais"
+                                alt="Migration & Maintenance Image" class="mb-4 rounded-lg">
+                        </a>
+                        <div class="pt-5">
+                            <p class="mb-3 font-normal text-lg text-gray-700 dark:text-gray-400 leading-10">
+                                At Techtrove, we specialize in cutting-edge software development to propel your business
+                                into
+                                the digital future. Our experienced team of developers is dedicated to crafting robust,
+                                scalable, and innovative solutions tailored to meet your unique needs.
+                            </p>
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                View More
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Web & Mobile" class="content hidden flex flex-col items-center">
+                    <h2 class="text-2xl font-semibold mb-4">Web & Mobile Development</h2>
+                    <div class="max-w-xl rounded-lg">
+                        <a href="#">
+                            <img src="https://img.freepik.com/premium-photo/designer-development-ux-graphic-prototype-application_262807-17.jpg?size=626&ext=jpg&uid=P76213516&ga=GA1.1.213101867.1696940656&semt=ais"
+                                alt="Web & Mobile Image" class="mb-4 rounded-lg">
+                        </a>
+                        <div class="pt-5">
+                            <p class="mb-3 font-normal text-lg text-gray-700 dark:text-gray-400 leading-10">
+                                At Techtrove, we specialize in cutting-edge software development to propel your business
+                                into
+                                the digital future. Our experienced team of developers is dedicated to crafting robust,
+                                scalable, and innovative solutions tailored to meet your unique needs.
+                            </p>
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                View More
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="container mx-auto my-16 p-8 font-custom">
         <div class="flex flex-col-reverse md:flex-row gap-10 md:gap-10 rounded-lg overflow-hidden shadow-lg">
             <div class="w-full md:w-1/3 p-4">
                 <div class="text-4xl md:text-6xl mb-10 font-semibold text-center md:text-right">
@@ -639,7 +987,7 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-8">
                 <div
                     class="max-w-2xl p-4 bg-white border border-gray-200 rounded-2xl shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
                     <div class="p-4">
@@ -737,7 +1085,7 @@
 
     <div class="mx-4 md:mx-20 lg:mx-40 border-b"></div>
 
-    <div class="bg-white">
+    <div class="bg-white my-16">
         <div class="container mx-auto px-4 pt-10">
             <h2 class="title-font-family font-semibold text-2xl md:text-3xl mb-10 text-center font-custom">Advanced
                 Software Skills Certification</h2>
@@ -755,7 +1103,7 @@
     </div>
 
 
-    <div class="container mx-auto p-8 lg:p-20 flex flex-col md:flex-row rounded-3xl justify-center font-custom text-white mb-5"
+    <div class="container mx-auto p-8 lg:p-20 flex flex-col md:flex-row rounded-3xl justify-center font-custom text-white my-16 "
         style="background-color: #00252E;">
         <div class="w-full md:w-1/2 pr-0 md:pr-8 mb-4 md:mb-0">
             <h2 class="text-xl md:text-xl text-green-500 font-bold mb-4">GET IN TOUCH</h2>
@@ -807,125 +1155,125 @@
         </div>
     </div>
 
-    <footer class="pt-10 pb-2 w-full">
+    <footer class="pt-1 pb-2 w-full">
         <div class="container mx-auto mt-6 mb-16 px-4 font-custom">
             <div class="flex flex-col md:flex-row md:justify-between">
                 <div>
-                    <h2 class="title-font-family text-white font-medium text-2xl">INDUSTRIES</h2>
-                    <ul class="text-white text-lg font-bold mt-4">
-                        <li class="mb-4">
+                    <h2 class="title-font-family text-white font-medium text-2xl mt-4">INDUSTRIES</h2>
+                    <ul class="text-gray-400 text-lg font-medium mt-4">
+                        <li class="mb-2">
                             <a href="#">Financial Services</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="#">Manufacturing</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="#">Educations</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="#">Telecommunications</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="#">Transportation & Logistics</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="#">Agriculture</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="#">E-commerce</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="#">Travel & Tourism</a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <h2 class="title-font-family text-white font-medium text-2xl"> SOFTWARE SOLUTIONS</h2>
-                    <ul class="text-white text-lg font-bold mt-4">
-                        <li class="mb-4">
+                    <h2 class="title-font-family text-white font-medium text-2xl mt-4">SOFTWARE SOLUTIONS</h2>
+                    <ul class="text-gray-400 text-lg font-medium mt-4">
+                        <li class="mb-2">
                             <a href="" class=" hover:underline">Software Development</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="">SAP Consulting Services</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="">Web & Mobile App Development</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="">IoT Consulting Services</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="">Data Analytics Solutions</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="">Cloud Computing Services</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="">Migration & Maintenance Program</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="">DevOps</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="">UI/UX Design</a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <h2 class="title-font-family text-white font-medium text-2xl"> ENGINEERING SOLUTIONS</h2>
-                    <ul class="text-white text-lg font-bold mt-4">
-                        <li class="mb-4">
+                    <h2 class="title-font-family text-white font-medium text-2xl mt-4"> ENGINEERING SOLUTIONS</h2>
+                    <ul class="text-gray-400 text-lg font-medium mt-4">
+                        <li class="mb-2">
                             <a href="" class=" hover:underline">Electronics Design</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="">Mechanical Design </a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="">Firmware Development</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="">Embedded Systems</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="">Custom IoT Solutions </a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="">Prototyping & Production</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="">Testing & Validation</a>
                         </li>
                     </ul>
                 </div>
 
                 <div>
-                    <h2 class="title-font-family text-white font-medium text-2xl">Technologies</h2>
-                    <ul class="text-white text-lg font-bold mt-4">
-                        <li class="mb-4">
+                    <h2 class="title-font-family text-white font-medium text-2xl mt-4">TECHNOLOGIES</h2>
+                    <ul class="text-gray-400 text-lg font-medium mt-4">
+                        <li class="mb-2">
                             <a href="/" class=" hover:underline">Docker</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="/" class=" hover:underline">Python</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="/" class=" hover:underline">PHP</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="/" class=" hover:underline">Javascript</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="/" class=" hover:underline">React js</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="/" class=" hover:underline">Web Developer</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="/" class=" hover:underline">Kotlin</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="/" class=" hover:underline">Docker</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="/" class=" hover:underline">Git</a>
                         </li>
                     </ul>
@@ -934,33 +1282,33 @@
 
             <div class="mx-auto mt-5 border-b"></div>
 
-            <div class="flex flex-col md:flex-row md:justify-evenly mt-10">
+            <div class="flex flex-col md:flex-row md:justify-start gap-10 mt-10">
                 <div>
-                    <h2 class="title-font-family text-white font-medium text-2xl">CHAT WITH US</h2>
-                    <ul class="text-white text-md font-bold mt-4">
-                        <li class="mb-4">
+                    <h2 class="title-font-family text-white font-medium text-2xl mt-4">CHAT WITH US</h2>
+                    <ul class="text-gray-400 text-lg font-medium mt-4">
+                        <li class="mb-2">
                             <a href="#">+91-9059654891</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-2">
                             <a href="#">support@techtrovesolutions.com</a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <h2 class="title-font-family text-white font-medium text-2xl">ADDRESS</h2>
-                    <div class="text-white text-md font-bold mt-4">
-                        <div class="mb-4">S-01, Second Floor, S.V. Regalia,</div>
-                        <div class="mb-4">2nd Main, Friends Layout,</div>
-                        <div class="mb-4">Seegehalli, K.R. Puram,</div>
-                        <div class="mb-4">Bangalore - 560049, INDIA.</div>
+                    <h2 class="title-font-family text-white font-medium text-2xl mt-4">ADDRESS</h2>
+                    <div class="text-gray-400 text-lg font-medium mt-4">
+                        <div class="mb-2">S-01, Second Floor, S.V. Regalia,</div>
+                        <div class="mb-2">2nd Main, Friends Layout,</div>
+                        <div class="mb-2">Seegehalli, K.R. Puram,</div>
+                        <div class="mb-2">Bangalore - 560049, INDIA.</div>
                     </div>
                 </div>
             </div>
 
             <div class="mt-5 flex flex-col md:flex-row justify-between items-center">
 
-                <span class="flex items-center text-md text-white dark:text-gray-400 md:order-2">© 2023 <a href="/">
-                        Techtrove solutions.™</a>. All Rights Reserved.</span>
+                <span class="flex items-center text-md text-white dark:text-gray-400 md:order-2">Copyright © 2023 <a href="/">
+                    Techtrove solutions.™</a>. All Rights Reserved.</span>
 
                 <ul
                     class="flex flex-wrap items-center mt-4 text-sm font-medium text-white dark:text-gray-400 md:order-1">
@@ -973,6 +1321,7 @@
                     <li>
                         <a href="#" class="mr-4 hover:underline md:mr-6">Cookie Policy</a>
                     </li>
+                    
                 </ul>
             </div>
         </div>
