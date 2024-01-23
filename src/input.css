@@ -31,15 +31,6 @@ footer {
     transition: all .5s;
 }
 
-.pri-menu button, .pri-menu > a {
-    text-transform: uppercase;
-}
-
-.pri-menu:hover {
-    background-color: var(--primary-color);
-    color: #000;
-}
-
 .sec-menu a:hover {
     background-color: var(--primary-color);
     color: #fff;
