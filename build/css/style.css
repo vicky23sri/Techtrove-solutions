@@ -2987,7 +2987,7 @@ footer {
 
 .my-custom-list li.selected {
   -o-border-image: linear-gradient(to right, #2767F8, #8938E5, #FF00CF);
-     border-image: linear-gradient(to right, #2767F8, #8938E5, #FF00CF);
+  border-image: linear-gradient(to right, #2767F8, #8938E5, #FF00CF);
   border-image-slice: 1;
   border-image-width: 0 0 5px 0;
   border-style: solid;
@@ -2998,17 +2998,21 @@ footer {
   color: #007bff;
 }
 
-.my-software-list li.selected {
-  -o-border-image: linear-gradient(to right, #2767F8, #8938E5, #FF00CF);
-     border-image: linear-gradient(to right, #2767F8, #8938E5, #FF00CF);
-  border-image-slice: 1;
-  border-image-width: 0 0 5px 0;
-  border-style: solid;
-  background-color: #f0f0f0;
+.my-software-list .tab-list-item {
+  border-bottom: 2px solid #000;
 }
 
-.my-software-list li.selected a {
-  color: #0bda20;
+.my-software-list .tab-list-item:hover {
+  color: #007bff; 
+}
+
+.my-software-list .tab-list-item.active {
+  color: #007bff; 
+  border-image: linear-gradient(to right, #2767F8, #8938E5, #FF00CF);
+  border-image-slice: 1;
+  border-image-slice: 1;
+  border-image-width: 0 0 5px 0;
+  background-color:#f0f0f0;
 }
 
 
