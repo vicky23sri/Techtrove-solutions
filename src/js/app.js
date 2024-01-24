@@ -60,40 +60,52 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const tabs = document.querySelectorAll('.my-software-list li a');
-    const contents = document.querySelectorAll('.content');
+    const tabs = document.querySelectorAll('.tab-list-item');
+    const tabContents = document.querySelectorAll('.tab-content');
     let currentIndex = 0;
-    let intervalId;  
+    let intervalId;
 
-    function showContent(index) {
-        contents.forEach(content => {
+    function changeTab() {
+        tabContents.forEach(content => {
             content.classList.add('hidden');
         });
 
-        tabs.forEach(tab => {
-            tab.parentElement.classList.remove('selected');
+        tabs.forEach(t => {
+            t.classList.remove('active');
         });
 
-        contents[index].classList.remove('hidden');
-        tabs[index].parentElement.classList.add('selected');
+        currentIndex = (currentIndex + 1) % tabs.length;
+
+        tabs[currentIndex].classList.add('active');
+        tabContents[currentIndex].classList.remove('hidden');
     }
 
-    function nextContent() {
-        currentIndex = (currentIndex + 1) % contents.length;
-        showContent(currentIndex);
+    function resetInterval() {
+        clearInterval(intervalId);
+        intervalId = setInterval(changeTab, 5000);
     }
 
     tabs.forEach((tab, index) => {
-        tab.addEventListener('click', function (e) {
-            e.preventDefault();
-            showContent(index);
+        tab.addEventListener('click', () => {
+            tabContents.forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            tabContents[index].classList.remove('hidden');
+
+            tabs.forEach(t => {
+                t.classList.remove('active');
+            });
+
+            tab.classList.add('active');
             currentIndex = index;
-            
-            clearInterval(intervalId);
+
+            resetInterval(); 
         });
     });
 
-    intervalId = setInterval(nextContent, 5000);
+    intervalId = setInterval(changeTab, 5000);
+    tabs[0].click();
 });
 
 //sidebar
